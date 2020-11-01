@@ -3,10 +3,19 @@ body{
   padding: 0;
 }
 
+.heading{
+
+  margin-top: 2%;
+  margin-left: 4%;
+  display:inline-block;
+  font-size: 3rem;
+
+}
+
 .bg-img{
+
   margin: 0;
   padding: 0;
-
   height: 1000px;
   width: auto;
   background-color: red;
@@ -15,6 +24,7 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
 }
 .nav-item{
   padding: 0 18px;
@@ -24,13 +34,48 @@ body{
   font-size: 1.5rem;
 }
 
-.quote{
-  top: 35%;
-  left: 20%;
-  position: absolute;
-  color: red;
-  text-align: center;
+.quote {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;color:red;
+}
 
+.quote {
+  animation: showup 7s infinite;
+}
+
+.quote2 {
+  color:yellow;
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.quote3 {
+  color:blue;
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
 }
 
 #sec3{
@@ -57,15 +102,20 @@ body{
 }
 
 #sec4{
-  display: flex;
+  /* display: flex; */
+  text-align: center;
   justify-content: center;
   align-items: center;
   background: #16384c;
 }
 
+.s4-title{
+  padding-top: 2%;
+  color: white;
+}
 .container{
   position: relative;
-  width: 1500px;
+  width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +137,7 @@ body{
 }
 
 .container .card:hover{
-  height: 420px;
+  height: 520px;
 }
 
 .container .card .imgBX{
