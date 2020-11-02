@@ -4,16 +4,15 @@ body{
 }
 
 .heading{
-
   margin-top: 2%;
   margin-left: 4%;
   display:inline-block;
-  font-size: 3rem;
-
+  font-size: 3.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 .bg-img{
-
   margin: 0;
   padding: 0;
   height: 1000px;
@@ -35,15 +34,16 @@ body{
 }
 
 .nav-link{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: red;
+  font-family: 'Amatic SC', cursive;
 }
 
 .quote {
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
-  color:red;
+  color:#595b83;
 }
 
 .quote {
@@ -51,13 +51,14 @@ body{
 }
 
 .quote2 {
-  color:yellow;
+  color:#595b83;
   width:0px;
   animation: reveal 7s infinite;
 }
 
 .quote3 {
-  color:blue;
+  width: 300px
+  color:#595b83;
   margin-left:-355px;
   animation: slidein 7s infinite;
 }
@@ -89,6 +90,11 @@ body{
   background-color: white;
   padding:7% 15%;
 
+}
+
+.donate-r{
+  font-weight: bold;
+  font-family:'Montserrat', sans-serif;
 }
 
 .feature-box{
@@ -124,7 +130,7 @@ body{
 .testimonial-text{
 
   font-size: 3rem;
-  font-family: Montserrat;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -139,7 +145,6 @@ body{
 }
 
 #sec4{
-  /* display: flex; */
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -148,6 +153,7 @@ body{
 
 .s4-title{
   padding-top: 4%;
+  font-size: 2rem;
   color: white;
 }
 .container{
@@ -196,13 +202,19 @@ body{
   position: relative;
   margin-top: -140px;
   padding: 10px 15px;
-  text-align: center;
+  text-align: left;
   color: #111;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
+.content h2{
+  font-family: 'Quicksand', sans-serif;
+}
 
+.content ul{
+  font-family: 'Montserrat', sans-serif;
+}
 .container .card:hover .content{
   visibility: visible;
   opacity: 1;
@@ -398,7 +410,6 @@ section .wave:after{
 @media (max-width: 990px){
   .bg-img{
     background-image: url(../images/mbg-image2.jpg);
-    /* background-color: ; */
   }
 
   .heading{
